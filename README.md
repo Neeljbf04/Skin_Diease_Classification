@@ -16,10 +16,11 @@ The dataset consists of **900 labeled images**, split into **80% training and 10
 - **Vascular Lesion**  
 
 ## 🛠️ Tech Stack  
-- **Framework:** PyTorch, Ultralytics YOLOv8  
-- **Dataset:** Kaggle (Nooby123/Skin-Disease)  
-- **Optimization:** Adam Optimizer (`lr=1e-4`)  
-- **Image Size:** 224x224  
+- **Framework:** PyTorch, Ultralytics YOLOv8
+## 🛠️ Hyperparameter 
+- **Optimization:** Adam Optimizer
+- **Learning rate:** 1e-4  
+- **Image Size:** 224 
 - **Batch Size:** 32  
 - **Training:** 15 epochs  
 
@@ -31,18 +32,7 @@ The dataset consists of **900 labeled images**, split into **80% training and 10
    ```
 2. Install dependencies:  
    ```bash
-   pip install torch torchvision ultralytics kagglehub matplotlib  
-   ```
-3. Download the dataset:  
-   ```python
-   import kagglehub  
-   path = kagglehub.dataset_download("nooby123/skin-disease")  
-   ```
-4. Train the YOLOv8 classifier:  
-   ```python
-   from ultralytics import YOLO  
-   model = YOLO('yolov8s-cls.pt')  
-   model.train(data=path, epochs=15, imgsz=224, batch=32, optimizer='Adam', lr0=1e-4)  
+   pip install torch torchvision ultralytics kagglehub matplotlib   
    ```
 
 ## 📊 Evaluation Metrics  
