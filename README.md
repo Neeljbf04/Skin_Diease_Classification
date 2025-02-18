@@ -3,7 +3,7 @@
 This project focuses on **skin disease classification** using **YOLOv8 (classification mode)**. It utilizes a dataset containing **900 images** categorized into **9 different skin diseases**, helping to develop an AI-powered diagnostic tool for dermatology.  
 
 ## 📂 Dataset Information  
-The dataset consists of **900 labeled images**, split into **80% training and 20% validation**. The model is trained to classify the following skin conditions:  
+The dataset consists of **900 labeled images**, split into **80% training and 10% validation and 10% testing**. The model is trained to classify the following skin conditions:  
 
 - **Actinic Keratosis**  
 - **Atopic Dermatitis**  
